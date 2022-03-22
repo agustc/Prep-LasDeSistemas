@@ -58,7 +58,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(str1===str2){
+  if(str1.length===str2.length){
     return true;
   }
   
@@ -93,7 +93,7 @@ mayorQueCincuenta(20);
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return 22%5;
+  return x%y;
 }
 
 function esPar(num) {
@@ -120,13 +120,13 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return num^2;
+  return num**2;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  num^3;
+  num**3;
 }
 elevarAlCubo(3);
 
@@ -140,12 +140,13 @@ elevar(2,2);
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.round(num);
+  return Math.ceil(num);
 }
 redondearHaciaArriba(5,62);
 
@@ -176,7 +177,7 @@ function agregarSimboloExclamacion(str) {
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
 
-  console.log('Hello world'+ str);
+  return str+" !";
 }
 agregarSimboloExclamacion('!');
 
@@ -185,7 +186,7 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
 
-  return nombre+apellido;
+  return nombre+" "+ apellido;
 
 }
 
@@ -195,7 +196,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  console.log(`Hola, ${nombre}`);
+ return "Hola "+nombre+ "!";
 }
 obtenerSaludo('Agustiina')
 
